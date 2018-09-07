@@ -15,7 +15,8 @@ body, html {
 
 .bg-img {
     /* The image used */
-    background-image: url("/image/good.jpg");
+    background: url("/image/good.jpg") no-repeat center fixed;
+    background-size:cover;
 
     
     background-size:contain;
