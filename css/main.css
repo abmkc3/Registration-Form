@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding:0;
+}
+
+#sub{
+    margin-left: 56px;
+}
+.container{
+    margin: 7% 32%;
+    background-color: chartreuse;
+    width: 18%;
+}
+#form{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}

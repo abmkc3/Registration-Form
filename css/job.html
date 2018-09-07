@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="script.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="mohanti.css">
+</head>
+<body class="bg-img" style="width:100%;height:1000px";>
+    <div class="header">
+            <a href="#" class="previous" style="float:left;">SignIn</a>
+            <a href="#" class="next" style="float:right;">HOME </a>
+            
+           
+
+        <h2> Registration Form</h2>
+    </div>
+
+<div class="container">
+    <form action="/action_page.php" name="myForm" onsubmit= "return form()" method="post">
+      <div class="row">
+        <div class="col-15">
+          <label for="fname"><strong>First Name</strong></label>
+        </div>
+        <div class="col-35">
+          
+          <input type="text" id="fname" name="firstname" required>
+          
+          
+        </div>
+      </div>
+      <div class="row">
+            <div class="col-15">
+              <label for="mname"><strong>Middle Name</strong></label>
+            </div>
+            <div class="col-35">
+              <input type="text" id="fname" name="middlename"  required>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-15">
+          <label for="lname"><strong>Last Name</strong></label>
+        </div>
+        <div class="col-35">
+          <input type="text" id="lname" name="lastname" required>
+        </div>
+      </div>
+      <div class="row">
+            <div class="col-25">
+              <label for="email"><strong>E-Mail</strong></label>
+            </div>
+            <div class="col-75">
+                    <input type="email" name="email" id="email" placeholder="someone@example.com" required>
+            </div>
+          </div>
+          <div class="row">
+                <div class="col-25">
+                  <label for="phone"><strong>Contact No</strong></label>
+                </div>
+                <div class="col-75">
+                        <input type="tel" name="Phone" id="phone" placeholder="1234...." required>
+                </div>
+              </div>
+      <div class="row">
+            <div class="col-25" style="padding:0px;">
+              <label for="gender"><strong>GENDER</strong></label>
+            </div>
+            <div class="col-75 gender">
+                    <input type="radio" name="gender" id="gender" value="male"> Male
+                    <input type="radio" name="gender" id="gender" value="female"> Female
+                    <input type="radio" name="gender" id="gender" value="other"> Other
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="col-25" style="padding-top:15px;">
+          <label for="applyfor"></label><strong>Apply For</strong></label>
+        </div>
+        <div class="col-75">
+          <select id="applyfor" name="apply2">
+            <option value="btch">BE/Btech</option>
+            <option value="bba">BBA</option>
+            <option value="mca">MCA</option>
+            <option value="OTHER">others</option>
+          </select>
+        </div>
+    </div>
+        
+      <div class="row">
+        <div class="col-25">
+          <label for="button1"></label>Apply As</label>
+          </div>
+
+          <div class="dropdown">
+              <button class="dropbtn">FRESHER</button>
+              <div class="dropdown-content">
+              CollageName:  <input style="text-transform:capitalize;" type="text" id="option1" name="collegeName"><br>
+              Percentage Score(%):<input type="number" id="option1" name="pecentage"><br>
+
+              </div>
+              
+            </div>
+          </div>
+          <div class="row" style="margin-top:5px;">
+              <div class="col-25">
+                <label for="button1"></label></label>
+                </div>
+      
+                <div class="dropdown">
+                    <button class="dropbtn ">Experience</button>
+                    <div class="dropdown-content" style="padding-bottom:5px;">
+                    Year Of Exp:  <input type="number" id="exp1" name="exp"><br>
+                    Company/Organisation:<input style="text-transform:capitalize;" type="text" id="option1" name="company"><br>
+                    Designation:<input  style="text-transform:Capitalize;" type="text" id="desg1" name="designation"><br>
+
+      
+                    </div>
+                    
+                  </div>
+                </div>
+
+                <div class="row" style="margin:6px;">
+                    <div class="col-25">
+                      <label for="file"><strong>RESUME</strong></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="file" name="pic" id="file" accept="file_extension">
+                    </div>
+                  </div>
+          
+          
+          
+
+
+      
+
+      <div class="row">
+        <div class="col-25">
+          <label for="subject"><strong>AboutYourself</strong></label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
